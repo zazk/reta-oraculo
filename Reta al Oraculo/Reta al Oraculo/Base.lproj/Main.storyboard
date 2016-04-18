@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,13 +17,43 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_choose" translatesAutoresizingMaskIntoConstraints="NO" id="A1R-JT-06G">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCb-ki-g2F">
+                                <rect key="frame" x="12" y="381" width="317" height="298"/>
+                                <state key="normal" title="Button" image="house1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEV-Au-Xiu">
+                                <rect key="frame" x="687" y="381" width="317" height="298"/>
+                                <state key="normal" title="Button" image="house3"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTD-dl-gb8">
+                                <rect key="frame" x="348" y="381" width="317" height="298"/>
+                                <state key="normal" title="Button" image="house2"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="A1R-JT-06G" secondAttribute="trailing" constant="-20" id="6bZ-gK-hAp"/>
+                            <constraint firstItem="A1R-JT-06G" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="GM4-o4-pck"/>
+                            <constraint firstItem="A1R-JT-06G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="lPO-JX-SrM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A1R-JT-06G" secondAttribute="bottom" id="v4r-V5-KGm"/>
+                        </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="340" y="372"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg_choose" width="2048" height="1536"/>
+        <image name="house1" width="317" height="298"/>
+        <image name="house2" width="635" height="596"/>
+        <image name="house3" width="635" height="596"/>
+    </resources>
 </document>
