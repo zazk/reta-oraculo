@@ -6,6 +6,62 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="xCb-RK-NmK">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sWB-iy-DwA" customClass="HomeViewController" customModule="Reta_al_Oraculo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xlw-AY-gdh"/>
+                        <viewControllerLayoutGuide type="bottom" id="BPl-WC-9TP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IBe-6E-FJU">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mhs-EO-84q">
+                                <rect key="frame" x="13" y="93" width="1024" height="768"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_choose" translatesAutoresizingMaskIntoConstraints="NO" id="EUv-IW-6gl">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXq-Z2-C9w">
+                                <rect key="frame" x="12" y="381" width="317" height="298"/>
+                                <state key="normal" title="Button" image="house1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6B-jZ-Vgg">
+                                <rect key="frame" x="687" y="381" width="317" height="298"/>
+                                <state key="normal" title="Button" image="house3"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksP-w3-CaG">
+                                <rect key="frame" x="348" y="381" width="317" height="298"/>
+                                <state key="normal" title="Button" image="house2"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BPl-WC-9TP" firstAttribute="top" secondItem="EUv-IW-6gl" secondAttribute="bottom" id="0hj-Lt-Hvg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EUv-IW-6gl" secondAttribute="trailing" constant="-20" id="Jz7-77-YhJ"/>
+                            <constraint firstItem="EUv-IW-6gl" firstAttribute="top" secondItem="IBe-6E-FJU" secondAttribute="topMargin" id="OQS-aR-RtI"/>
+                            <constraint firstItem="EUv-IW-6gl" firstAttribute="leading" secondItem="IBe-6E-FJU" secondAttribute="leadingMargin" constant="-20" id="SjR-3U-fle"/>
+                            <constraint firstItem="BPl-WC-9TP" firstAttribute="top" secondItem="mhs-EO-84q" secondAttribute="bottom" id="Yqu-zv-45H"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="mhs-EO-84q"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="EH8-Cg-ksW"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="imageView" destination="mhs-EO-84q" id="my2-vl-BFF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AKf-1M-dfa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301" y="150"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -18,42 +74,168 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_choose" translatesAutoresizingMaskIntoConstraints="NO" id="A1R-JT-06G">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S4s-8O-jxe">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCb-ki-g2F">
-                                <rect key="frame" x="12" y="381" width="317" height="298"/>
-                                <state key="normal" title="Button" image="house1"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEV-Au-Xiu">
-                                <rect key="frame" x="687" y="381" width="317" height="298"/>
-                                <state key="normal" title="Button" image="house3"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTD-dl-gb8">
-                                <rect key="frame" x="348" y="381" width="317" height="298"/>
-                                <state key="normal" title="Button" image="house2"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="AXY-9P-T1V">
+                                <rect key="frame" x="64" y="364" width="449" height="336"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ds-k0-Ak6">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <connections>
+                                    <segue destination="sWB-iy-DwA" kind="show" id="Acp-tX-jTy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="A1R-JT-06G" secondAttribute="trailing" constant="-20" id="6bZ-gK-hAp"/>
-                            <constraint firstItem="A1R-JT-06G" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="GM4-o4-pck"/>
-                            <constraint firstItem="A1R-JT-06G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="lPO-JX-SrM"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A1R-JT-06G" secondAttribute="bottom" id="v4r-V5-KGm"/>
+                            <constraint firstItem="6Ds-k0-Ak6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="26a-4V-JXd"/>
+                            <constraint firstItem="S4s-8O-jxe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="35o-ho-1o9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Ds-k0-Ak6" secondAttribute="bottom" id="7lO-km-iq6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Ds-k0-Ak6" secondAttribute="trailing" constant="-20" id="7on-Bn-Gvr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S4s-8O-jxe" secondAttribute="bottom" id="V6I-b2-rEi"/>
+                            <constraint firstItem="6Ds-k0-Ak6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="fdB-9B-NPB"/>
+                            <constraint firstItem="S4s-8O-jxe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="gxd-nV-bnU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S4s-8O-jxe" secondAttribute="trailing" constant="-20" id="vzD-z3-xKe"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="imageView" destination="S4s-8O-jxe" id="hmk-vY-Iwq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1164" y="315"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="if8-Y1-VbX">
+            <objects>
+                <viewController id="ASj-ZY-K32" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vNW-zQ-Iob"/>
+                        <viewControllerLayoutGuide type="bottom" id="K4s-j7-uaB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r2u-gZ-9TF">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-fal" translatesAutoresizingMaskIntoConstraints="NO" id="Gy6-dM-dlw">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gy6-dM-dlw" firstAttribute="leading" secondItem="r2u-gZ-9TF" secondAttribute="leadingMargin" constant="-20" id="8mG-1C-Dpc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gy6-dM-dlw" secondAttribute="trailing" constant="-20" id="KRu-mX-obr"/>
+                            <constraint firstItem="K4s-j7-uaB" firstAttribute="top" secondItem="Gy6-dM-dlw" secondAttribute="bottom" id="Z2H-52-vGG"/>
+                            <constraint firstItem="Gy6-dM-dlw" firstAttribute="top" secondItem="r2u-gZ-9TF" secondAttribute="topMargin" id="sFz-7C-6M9"/>
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQj-26-TJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="340" y="372"/>
+            <point key="canvasLocation" x="-915" y="1819"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TSO-Rr-ETx">
+            <objects>
+                <viewController id="vWQ-BL-fNI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ky6-Jc-ejB"/>
+                        <viewControllerLayoutGuide type="bottom" id="gWf-rK-La3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L8u-KC-aQd">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-true" translatesAutoresizingMaskIntoConstraints="NO" id="oub-rJ-9zj">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gWf-rK-La3" firstAttribute="top" secondItem="oub-rJ-9zj" secondAttribute="bottom" id="Jr3-qG-qNJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oub-rJ-9zj" secondAttribute="trailing" constant="-20" id="RiW-m7-gUv"/>
+                            <constraint firstItem="oub-rJ-9zj" firstAttribute="top" secondItem="L8u-KC-aQd" secondAttribute="topMargin" id="V1A-Od-9Tj"/>
+                            <constraint firstItem="oub-rJ-9zj" firstAttribute="leading" secondItem="L8u-KC-aQd" secondAttribute="leadingMargin" constant="-20" id="n5z-Yv-m5N"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YdX-AT-Ha0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="1831"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kjN-Ca-L8D">
+            <objects>
+                <viewController id="DZe-PZ-CMM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0CN-nM-qtA"/>
+                        <viewControllerLayoutGuide type="bottom" id="vRt-GH-YHL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lqq-JH-mmx">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-question" translatesAutoresizingMaskIntoConstraints="NO" id="Taa-aO-v6E">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCf-fZ-8gY">
+                                <rect key="frame" x="703" y="517" width="321" height="188"/>
+                                <state key="normal" image="true"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Km-wE-z8k">
+                                <rect key="frame" x="0.0" y="517" width="317" height="188"/>
+                                <state key="normal" image="false"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="qIh-35-nj2">
+                                <rect key="frame" x="124" y="437" width="46" height="47"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow-up" translatesAutoresizingMaskIntoConstraints="NO" id="AwA-k2-JyE">
+                                <rect key="frame" x="858" y="96" width="48" height="47"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eL5-H2-Zw6">
+                                <rect key="frame" x="144" y="118" width="725" height="349"/>
+                                <string key="text">¿Un ajetreado estilo de vida, impulsa a la practicidad en las actividades del hogar?</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="51"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vRt-GH-YHL" firstAttribute="top" secondItem="Taa-aO-v6E" secondAttribute="bottom" id="Uo7-B3-RJp"/>
+                            <constraint firstItem="Taa-aO-v6E" firstAttribute="top" secondItem="Lqq-JH-mmx" secondAttribute="topMargin" id="ajP-iF-lOv"/>
+                            <constraint firstItem="Taa-aO-v6E" firstAttribute="leading" secondItem="Lqq-JH-mmx" secondAttribute="leadingMargin" constant="-20" id="nsm-I4-t0h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Taa-aO-v6E" secondAttribute="trailing" constant="-20" id="oeu-r1-mmF"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hF3-8u-Cfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1149" y="1262"/>
         </scene>
     </scenes>
     <resources>
-        <image name="bg_choose" width="2048" height="1536"/>
+        <image name="arrow-down" width="48" height="48"/>
+        <image name="arrow-up" width="46" height="48"/>
+        <image name="bg" width="1024" height="768"/>
+        <image name="bg-fal" width="2048" height="1536"/>
+        <image name="bg-question" width="1024" height="768"/>
+        <image name="bg-true" width="1024" height="768"/>
+        <image name="bg_choose" width="1024" height="768"/>
+        <image name="false" width="315" height="182"/>
         <image name="house1" width="317" height="298"/>
         <image name="house2" width="635" height="596"/>
         <image name="house3" width="635" height="596"/>
+        <image name="true" width="320" height="182"/>
     </resources>
 </document>

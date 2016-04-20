@@ -14,6 +14,7 @@
 		CE48EDF21CC3E3AF00D3ED8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE48EDF01CC3E3AF00D3ED8A /* LaunchScreen.storyboard */; };
 		CE48EDFD1CC3E3B000D3ED8A /* Reta_al_OraculoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48EDFC1CC3E3B000D3ED8A /* Reta_al_OraculoTests.swift */; };
 		CE48EE081CC3E3B000D3ED8A /* Reta_al_OraculoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48EE071CC3E3B000D3ED8A /* Reta_al_OraculoUITests.swift */; };
+		CE9CF4771CC6D39D00CF3D63 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9CF4761CC6D39D00CF3D63 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CE48EE031CC3E3B000D3ED8A /* Reta al OraculoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reta al OraculoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE48EE071CC3E3B000D3ED8A /* Reta_al_OraculoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reta_al_OraculoUITests.swift; sourceTree = "<group>"; };
 		CE48EE091CC3E3B000D3ED8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9CF4761CC6D39D00CF3D63 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				CE48EDE71CC3E3AF00D3ED8A /* AppDelegate.swift */,
 				CE48EDE91CC3E3AF00D3ED8A /* ViewController.swift */,
 				CE48EDEB1CC3E3AF00D3ED8A /* Main.storyboard */,
+				CE9CF4761CC6D39D00CF3D63 /* HomeViewController.swift */,
 				CE48EDEE1CC3E3AF00D3ED8A /* Assets.xcassets */,
 				CE48EDF01CC3E3AF00D3ED8A /* LaunchScreen.storyboard */,
 				CE48EDF31CC3E3AF00D3ED8A /* Info.plist */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					CE48EDE31CC3E3AF00D3ED8A = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = K3R9ZK9RXY;
 					};
 					CE48EDF71CC3E3B000D3ED8A = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -258,6 +262,7 @@
 			files = (
 				CE48EDEA1CC3E3AF00D3ED8A /* ViewController.swift in Sources */,
 				CE48EDE81CC3E3AF00D3ED8A /* AppDelegate.swift in Sources */,
+				CE9CF4771CC6D39D00CF3D63 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +334,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Enrique Juan de Dios (HDW454NN4N)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -374,7 +380,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Enrique Juan de Dios (K3R9ZK9RXY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Enrique Juan de Dios (K3R9ZK9RXY)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -399,10 +406,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Reta al Oraculo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cubix.app.Reta-al-Oraculo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -410,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Reta al Oraculo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cubix.app.Reta-al-Oraculo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -484,6 +497,7 @@
 				CE48EE0E1CC3E3B000D3ED8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE48EE0F1CC3E3B000D3ED8A /* Build configuration list for PBXNativeTarget "Reta al OraculoTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +506,7 @@
 				CE48EE111CC3E3B000D3ED8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE48EE121CC3E3B000D3ED8A /* Build configuration list for PBXNativeTarget "Reta al OraculoUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +515,7 @@
 				CE48EE141CC3E3B000D3ED8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
