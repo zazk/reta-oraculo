@@ -198,9 +198,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="true-large" translatesAutoresizingMaskIntoConstraints="NO" id="VVA-5D-xjO">
                                 <rect key="frame" x="367" y="117" width="291" height="218"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEh-kY-6cH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEh-kY-6cH">
                                 <rect key="frame" x="150" y="343" width="725" height="271"/>
-                                <string key="text">¿Un ajetreado estilo de vida, impulsa a la practicidad en las actividades del hogar?</string>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -248,10 +247,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCf-fZ-8gY">
                                 <rect key="frame" x="703" y="517" width="321" height="188"/>
                                 <state key="normal" image="true"/>
+                                <connections>
+                                    <action selector="trueButtonTapped:" destination="DZe-PZ-CMM" eventType="touchUpInside" id="e6h-ko-YuE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Km-wE-z8k">
                                 <rect key="frame" x="0.0" y="517" width="317" height="188"/>
                                 <state key="normal" image="false"/>
+                                <connections>
+                                    <action selector="falseButtonTapped:" destination="DZe-PZ-CMM" eventType="touchUpInside" id="2yh-AC-J0R"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="qIh-35-nj2">
                                 <rect key="frame" x="124" y="437" width="46" height="47"/>
@@ -259,9 +264,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow-up" translatesAutoresizingMaskIntoConstraints="NO" id="AwA-k2-JyE">
                                 <rect key="frame" x="858" y="96" width="48" height="47"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eL5-H2-Zw6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eL5-H2-Zw6">
                                 <rect key="frame" x="144" y="118" width="725" height="349"/>
-                                <string key="text">¿Un ajetreado estilo de vida, impulsa a la practicidad en las actividades del hogar?</string>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="51"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -285,7 +289,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hF3-8u-Cfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1149" y="1262"/>
+            <point key="canvasLocation" x="-2107" y="862"/>
         </scene>
     </scenes>
     <resources>
@@ -305,7 +309,7 @@
         <image name="true-large" width="290" height="214"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IUE-tu-CJ3"/>
+        <segue reference="ixA-VW-BOg"/>
         <segue reference="Koo-9Z-wEs"/>
     </inferredMetricsTieBreakers>
 </document>
