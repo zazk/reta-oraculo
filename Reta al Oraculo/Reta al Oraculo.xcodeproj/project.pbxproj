@@ -17,6 +17,7 @@
 		CE58AD321CC7595C00A1CC68 /* TrueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58AD311CC7595C00A1CC68 /* TrueViewController.swift */; };
 		CE58AD341CC7596A00A1CC68 /* FalseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58AD331CC7596A00A1CC68 /* FalseViewController.swift */; };
 		CE58AD361CC7597B00A1CC68 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58AD351CC7597B00A1CC68 /* QuestionViewController.swift */; };
+		CE58AD381CC7AF1700A1CC68 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58AD371CC7AF1700A1CC68 /* Tools.swift */; };
 		CE9CF4771CC6D39D00CF3D63 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9CF4761CC6D39D00CF3D63 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		CE58AD311CC7595C00A1CC68 /* TrueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrueViewController.swift; sourceTree = "<group>"; };
 		CE58AD331CC7596A00A1CC68 /* FalseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FalseViewController.swift; sourceTree = "<group>"; };
 		CE58AD351CC7597B00A1CC68 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		CE58AD371CC7AF1700A1CC68 /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		CE9CF4761CC6D39D00CF3D63 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				CE48EDEE1CC3E3AF00D3ED8A /* Assets.xcassets */,
 				CE48EDF01CC3E3AF00D3ED8A /* LaunchScreen.storyboard */,
 				CE48EDF31CC3E3AF00D3ED8A /* Info.plist */,
+				CE58AD371CC7AF1700A1CC68 /* Tools.swift */,
 			);
 			path = "Reta al Oraculo";
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				CE48EDEA1CC3E3AF00D3ED8A /* ViewController.swift in Sources */,
 				CE58AD361CC7597B00A1CC68 /* QuestionViewController.swift in Sources */,
 				CE48EDE81CC3E3AF00D3ED8A /* AppDelegate.swift in Sources */,
+				CE58AD381CC7AF1700A1CC68 /* Tools.swift in Sources */,
 				CE58AD321CC7595C00A1CC68 /* TrueViewController.swift in Sources */,
 				CE9CF4771CC6D39D00CF3D63 /* HomeViewController.swift in Sources */,
 			);
