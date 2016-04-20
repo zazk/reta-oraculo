@@ -27,14 +27,23 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXq-Z2-C9w">
                                 <rect key="frame" x="12" y="381" width="317" height="298"/>
                                 <state key="normal" title="Button" image="house1"/>
+                                <connections>
+                                    <segue destination="DZe-PZ-CMM" kind="show" id="4YQ-ei-RMx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6B-jZ-Vgg">
                                 <rect key="frame" x="687" y="381" width="317" height="298"/>
                                 <state key="normal" title="Button" image="house3"/>
+                                <connections>
+                                    <segue destination="DZe-PZ-CMM" kind="show" id="Koo-9Z-wEs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksP-w3-CaG">
                                 <rect key="frame" x="348" y="381" width="317" height="298"/>
                                 <state key="normal" title="Button" image="house2"/>
+                                <connections>
+                                    <segue destination="DZe-PZ-CMM" kind="show" id="6aI-u9-NhF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -109,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="-1164" y="315"/>
         </scene>
-        <!--View Controller-->
+        <!--False View Controller-->
         <scene sceneID="if8-Y1-VbX">
             <objects>
-                <viewController id="ASj-ZY-K32" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FalseViewController" id="ASj-ZY-K32" customClass="FalseViewController" customModule="Reta_al_Oraculo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vNW-zQ-Iob"/>
                         <viewControllerLayoutGuide type="bottom" id="K4s-j7-uaB"/>
@@ -123,6 +132,28 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-fal" translatesAutoresizingMaskIntoConstraints="NO" id="Gy6-dM-dlw">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="lkL-mf-wlb">
+                                <rect key="frame" x="77" y="607" width="46" height="47"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow-up" translatesAutoresizingMaskIntoConstraints="NO" id="7dH-L3-yzQ">
+                                <rect key="frame" x="899" y="65" width="48" height="47"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsb-Tn-BhK">
+                                <rect key="frame" x="633" y="699" width="391" height="69"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="IUE-tu-CJ3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGD-pM-KWs">
+                                <rect key="frame" x="150" y="353" width="725" height="271"/>
+                                <string key="text">¿Un ajetreado estilo de vida, impulsa a la practicidad en las actividades del hogar?</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="false-large" translatesAutoresizingMaskIntoConstraints="NO" id="ook-p9-sef">
+                                <rect key="frame" x="367" y="127" width="291" height="218"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -135,15 +166,18 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="PGD-pM-KWs" id="MwS-L1-vgj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQj-26-TJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-915" y="1819"/>
+            <point key="canvasLocation" x="-2296" y="1755"/>
         </scene>
-        <!--View Controller-->
+        <!--True View Controller-->
         <scene sceneID="TSO-Rr-ETx">
             <objects>
-                <viewController id="vWQ-BL-fNI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TrueViewController" id="vWQ-BL-fNI" customClass="TrueViewController" customModule="Reta_al_Oraculo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ky6-Jc-ejB"/>
                         <viewControllerLayoutGuide type="bottom" id="gWf-rK-La3"/>
@@ -155,6 +189,28 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-true" translatesAutoresizingMaskIntoConstraints="NO" id="oub-rJ-9zj">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="drt-lW-JAl">
+                                <rect key="frame" x="83" y="606" width="46" height="47"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow-up" translatesAutoresizingMaskIntoConstraints="NO" id="dID-O5-vvA">
+                                <rect key="frame" x="874" y="50" width="48" height="47"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="true-large" translatesAutoresizingMaskIntoConstraints="NO" id="VVA-5D-xjO">
+                                <rect key="frame" x="367" y="117" width="291" height="218"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEh-kY-6cH">
+                                <rect key="frame" x="150" y="343" width="725" height="271"/>
+                                <string key="text">¿Un ajetreado estilo de vida, impulsa a la practicidad en las actividades del hogar?</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5u4-Xe-NlU">
+                                <rect key="frame" x="633" y="700" width="391" height="69"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ixA-VW-BOg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -166,15 +222,18 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="dEh-kY-6cH" id="lps-KD-Umi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YdX-AT-Ha0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="134" y="1831"/>
+            <point key="canvasLocation" x="-1027" y="1717"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="kjN-Ca-L8D">
             <objects>
-                <viewController id="DZe-PZ-CMM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionViewController" id="DZe-PZ-CMM" customClass="QuestionViewController" customModule="Reta_al_Oraculo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0CN-nM-qtA"/>
                         <viewControllerLayoutGuide type="bottom" id="vRt-GH-YHL"/>
@@ -218,6 +277,11 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="falseButton" destination="9Km-wE-z8k" id="Qmh-gI-Z4w"/>
+                        <outlet property="questionLabel" destination="eL5-H2-Zw6" id="ZVq-Rz-ICf"/>
+                        <outlet property="trueButton" destination="zCf-fZ-8gY" id="nYo-p2-HYm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hF3-8u-Cfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,9 +297,15 @@
         <image name="bg-true" width="1024" height="768"/>
         <image name="bg_choose" width="1024" height="768"/>
         <image name="false" width="315" height="182"/>
+        <image name="false-large" width="252" height="214"/>
         <image name="house1" width="317" height="298"/>
         <image name="house2" width="635" height="596"/>
         <image name="house3" width="635" height="596"/>
         <image name="true" width="320" height="182"/>
+        <image name="true-large" width="290" height="214"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="IUE-tu-CJ3"/>
+        <segue reference="Koo-9Z-wEs"/>
+    </inferredMetricsTieBreakers>
 </document>

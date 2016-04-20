@@ -14,6 +14,9 @@
 		CE48EDF21CC3E3AF00D3ED8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE48EDF01CC3E3AF00D3ED8A /* LaunchScreen.storyboard */; };
 		CE48EDFD1CC3E3B000D3ED8A /* Reta_al_OraculoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48EDFC1CC3E3B000D3ED8A /* Reta_al_OraculoTests.swift */; };
 		CE48EE081CC3E3B000D3ED8A /* Reta_al_OraculoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48EE071CC3E3B000D3ED8A /* Reta_al_OraculoUITests.swift */; };
+		CE58AD321CC7595C00A1CC68 /* TrueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58AD311CC7595C00A1CC68 /* TrueViewController.swift */; };
+		CE58AD341CC7596A00A1CC68 /* FalseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58AD331CC7596A00A1CC68 /* FalseViewController.swift */; };
+		CE58AD361CC7597B00A1CC68 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58AD351CC7597B00A1CC68 /* QuestionViewController.swift */; };
 		CE9CF4771CC6D39D00CF3D63 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9CF4761CC6D39D00CF3D63 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +51,9 @@
 		CE48EE031CC3E3B000D3ED8A /* Reta al OraculoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reta al OraculoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE48EE071CC3E3B000D3ED8A /* Reta_al_OraculoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reta_al_OraculoUITests.swift; sourceTree = "<group>"; };
 		CE48EE091CC3E3B000D3ED8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE58AD311CC7595C00A1CC68 /* TrueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrueViewController.swift; sourceTree = "<group>"; };
+		CE58AD331CC7596A00A1CC68 /* FalseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FalseViewController.swift; sourceTree = "<group>"; };
+		CE58AD351CC7597B00A1CC68 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		CE9CF4761CC6D39D00CF3D63 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +108,9 @@
 				CE48EDE71CC3E3AF00D3ED8A /* AppDelegate.swift */,
 				CE48EDE91CC3E3AF00D3ED8A /* ViewController.swift */,
 				CE48EDEB1CC3E3AF00D3ED8A /* Main.storyboard */,
+				CE58AD351CC7597B00A1CC68 /* QuestionViewController.swift */,
+				CE58AD311CC7595C00A1CC68 /* TrueViewController.swift */,
+				CE58AD331CC7596A00A1CC68 /* FalseViewController.swift */,
 				CE9CF4761CC6D39D00CF3D63 /* HomeViewController.swift */,
 				CE48EDEE1CC3E3AF00D3ED8A /* Assets.xcassets */,
 				CE48EDF01CC3E3AF00D3ED8A /* LaunchScreen.storyboard */,
@@ -260,8 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE58AD341CC7596A00A1CC68 /* FalseViewController.swift in Sources */,
 				CE48EDEA1CC3E3AF00D3ED8A /* ViewController.swift in Sources */,
+				CE58AD361CC7597B00A1CC68 /* QuestionViewController.swift in Sources */,
 				CE48EDE81CC3E3AF00D3ED8A /* AppDelegate.swift in Sources */,
+				CE58AD321CC7595C00A1CC68 /* TrueViewController.swift in Sources */,
 				CE9CF4771CC6D39D00CF3D63 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
