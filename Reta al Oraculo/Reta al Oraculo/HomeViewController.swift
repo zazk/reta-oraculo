@@ -13,7 +13,14 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        // 1. lock the rotation
+        let appdelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appdelegate.shouldRotate = false
+        
+        // 2. Force the device in landscape mode when the view controller gets loaded
+        UIDevice.currentDevice().setValue(UIInterfaceOrientation.LandscapeRight.rawValue, forKey: "orientation")
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +28,23 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    override func shouldAutorotate() -> Bool {
+        // 3. Lock autorotate
+        return false
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return [UIInterfaceOrientationMask.LandscapeRight, UIInterfaceOrientationMask.LandscapeLeft]
+    }
+    
+    
+    override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
+        
+        // 4. Only allow Landscape
+        return UIInterfaceOrientation.LandscapeRight
+    }
+     
     /*
     // MARK: - Navigation
 

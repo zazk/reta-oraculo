@@ -19,6 +19,10 @@
 		CE58AD361CC7597B00A1CC68 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58AD351CC7597B00A1CC68 /* QuestionViewController.swift */; };
 		CE58AD381CC7AF1700A1CC68 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58AD371CC7AF1700A1CC68 /* Tools.swift */; };
 		CE9CF4771CC6D39D00CF3D63 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9CF4761CC6D39D00CF3D63 /* HomeViewController.swift */; };
+		CEC2D0C01CC8396C001EE8FE /* error.wav in Resources */ = {isa = PBXBuildFile; fileRef = CEC2D0BE1CC8396C001EE8FE /* error.wav */; };
+		CEC2D0C11CC8396C001EE8FE /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = CEC2D0BF1CC8396C001EE8FE /* success.wav */; };
+		CEC2D0C31CC83A41001EE8FE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2D0C21CC83A41001EE8FE /* Extensions.swift */; };
+		CEC2D0C51CC83E9A001EE8FE /* timer.wav in Resources */ = {isa = PBXBuildFile; fileRef = CEC2D0C41CC83E9A001EE8FE /* timer.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		CE58AD351CC7597B00A1CC68 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		CE58AD371CC7AF1700A1CC68 /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		CE9CF4761CC6D39D00CF3D63 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CEC2D0BE1CC8396C001EE8FE /* error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = error.wav; sourceTree = "<group>"; };
+		CEC2D0BF1CC8396C001EE8FE /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success.wav; sourceTree = "<group>"; };
+		CEC2D0C21CC83A41001EE8FE /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CEC2D0C41CC83E9A001EE8FE /* timer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = timer.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 		CE48EDE61CC3E3AF00D3ED8A /* Reta al Oraculo */ = {
 			isa = PBXGroup;
 			children = (
+				CEC2D0C61CC83E9E001EE8FE /* Sounds */,
 				CE48EDE71CC3E3AF00D3ED8A /* AppDelegate.swift */,
 				CE48EDE91CC3E3AF00D3ED8A /* ViewController.swift */,
 				CE48EDEB1CC3E3AF00D3ED8A /* Main.storyboard */,
@@ -118,6 +127,7 @@
 				CE48EDF01CC3E3AF00D3ED8A /* LaunchScreen.storyboard */,
 				CE48EDF31CC3E3AF00D3ED8A /* Info.plist */,
 				CE58AD371CC7AF1700A1CC68 /* Tools.swift */,
+				CEC2D0C21CC83A41001EE8FE /* Extensions.swift */,
 			);
 			path = "Reta al Oraculo";
 			sourceTree = "<group>";
@@ -138,6 +148,16 @@
 				CE48EE091CC3E3B000D3ED8A /* Info.plist */,
 			);
 			path = "Reta al OraculoUITests";
+			sourceTree = "<group>";
+		};
+		CEC2D0C61CC83E9E001EE8FE /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2D0BE1CC8396C001EE8FE /* error.wav */,
+				CEC2D0C41CC83E9A001EE8FE /* timer.wav */,
+				CEC2D0BF1CC8396C001EE8FE /* success.wav */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,9 +265,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC2D0C11CC8396C001EE8FE /* success.wav in Resources */,
 				CE48EDF21CC3E3AF00D3ED8A /* LaunchScreen.storyboard in Resources */,
+				CEC2D0C51CC83E9A001EE8FE /* timer.wav in Resources */,
 				CE48EDEF1CC3E3AF00D3ED8A /* Assets.xcassets in Resources */,
 				CE48EDED1CC3E3AF00D3ED8A /* Main.storyboard in Resources */,
+				CEC2D0C01CC8396C001EE8FE /* error.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +298,7 @@
 				CE58AD341CC7596A00A1CC68 /* FalseViewController.swift in Sources */,
 				CE48EDEA1CC3E3AF00D3ED8A /* ViewController.swift in Sources */,
 				CE58AD361CC7597B00A1CC68 /* QuestionViewController.swift in Sources */,
+				CEC2D0C31CC83A41001EE8FE /* Extensions.swift in Sources */,
 				CE48EDE81CC3E3AF00D3ED8A /* AppDelegate.swift in Sources */,
 				CE58AD381CC7AF1700A1CC68 /* Tools.swift in Sources */,
 				CE58AD321CC7595C00A1CC68 /* TrueViewController.swift in Sources */,

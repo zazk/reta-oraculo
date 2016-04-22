@@ -40,7 +40,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    var shouldRotate = false
+    
+    //MARK: - Func to rotate only one view controller
+    func application(application: UIApplication, supportedInterfaceOrientationsForWindow window: UIWindow?) -> UIInterfaceOrientationMask {
+        
+        if (shouldRotate == true){
+            return UIInterfaceOrientationMask.All
+        }
+        
+        return UIInterfaceOrientationMask.Landscape
+        
+    }
 
 }
 
